@@ -10,6 +10,7 @@
     "react-scripts": "^3.4.1"
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.0.8",
     "typescript": "3.3.3"
   },
   "scripts": {
