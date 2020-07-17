@@ -1,5 +1,5 @@
 {
-  "name": "keeper-app-part-1-starting",
+  "name": "stow-app-part-1-starting",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -10,6 +10,13 @@
     "react-scripts": "^3.4.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "typescript": "3.3.3"
   },
