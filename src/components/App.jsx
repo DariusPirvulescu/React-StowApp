@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Note from './Note';
 import keeps from '../keeps';
+import NoteForm from "./NoteForm";
 
 function createNotes(keep) {
   return (
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <Header />
+      <NoteForm />
       { keeps.map(createNotes) }
       <Footer />
     </div>
