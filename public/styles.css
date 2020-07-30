@@ -54,3 +54,20 @@ footer p {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.note-form {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 20px;
+  margin: 40px auto;
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+    
+}
+
+.note-form > input, textarea {
+  border: 0;
+}
