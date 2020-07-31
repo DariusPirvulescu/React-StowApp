@@ -66,6 +66,7 @@ footer p {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 20px;
+  padding-bottom: 0;
   margin: 40px auto;
   width: 35%;
   text-align: center;
@@ -75,5 +76,22 @@ footer p {
 }
 
 .note-form > input, textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
   border: 0;
+}
+
+.note-form > textarea {
+  margin-top: 15px;
+}
+
+.note-form > button {
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid lightgray;
+  border-radius: 50px;
+  background: #F5BA1D;
+  position: relative;
+  left: 5%;
+  top: 25px;
 }
