@@ -17,7 +17,9 @@ const App = () => (
   <div>
     <Header />
     <NoteForm />
-    { keeps.map(createNotes) }
+    <div className="notes-area">
+      { keeps.map(createNotes) }
+    </div>
     <Footer />
   </div>
 );
