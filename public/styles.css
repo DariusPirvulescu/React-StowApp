@@ -25,7 +25,7 @@ header h1 {
 }
 
 footer {
-  position: inherit;
+  position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -79,13 +79,14 @@ footer p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border: 0;
+  outline: none;
 }
 
-.note-form > textarea {
+.note-form textarea {
   margin-top: 15px;
 }
 
-.note-form > button {
+.note-form button {
   width: 50px;
   height: 50px;
   border: 0.5px solid lightgray;
@@ -94,4 +95,5 @@ footer p {
   position: relative;
   left: 5%;
   top: 25px;
+  outline: none;
 }
