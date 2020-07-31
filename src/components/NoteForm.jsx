@@ -21,7 +21,7 @@ const NoteFrom = (props) => {
     <div>
       <form
         onSubmit={(e) => {
-          props.onSubmit(note.title, note.text);
+          props.onSubmit(note);
           e.preventDefault();
           setNote({ title: '', text: '' });
         }}

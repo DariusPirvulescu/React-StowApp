@@ -1,9 +1,10 @@
+/* eslint-disable quotes */
 /* eslint-disable arrow-body-style */
-import React, { useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Note from './Note';
-import NoteForm from './NoteForm';
+import React, { useState } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import Note from "./Note";
+import NoteForm from "./NoteForm";
 
 const App = () => {
   const [notesArr, setNotesArr] = useState([]);
@@ -18,13 +19,14 @@ const App = () => {
       <NoteForm onSubmit={handleSubmit} />
       <div className="notes-area">
         {notesArr.map((noteItem, index) => {
+          const key = index + Math.floor(Math.random() * 70);
           return (
             <Note
-            key={index}
-            title={noteItem.title}
-            content={noteItem.text}
+              key={key}
+              title={noteItem.title}
+              content={noteItem.text}
             />
-          )
+          );
         })}
       </div>
       <Footer />
