@@ -7,7 +7,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-dots.png");
+  background-color: #eee;
   padding: 0 16px;
 }
 
