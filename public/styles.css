@@ -42,6 +42,7 @@ footer p {
 }
 
 .note {
+  position: relative;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -96,4 +97,20 @@ footer p {
   left: 5%;
   top: 25px;
   outline: none;
+}
+
+.delete-btn {
+  background-color: white;
+  border: none;
+  border-left: 2px solid #F5BA1D;
+  border-top: 2px solid #F5BA1D;
+  padding: 4px;
+  outline: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.delete-btn:hover{
+  background-color: #F5BA1D;
 }
