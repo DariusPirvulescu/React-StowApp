@@ -24,27 +24,41 @@ const NoteFrom = (props) => {
   const handleFocus = () => {
     setExpanded(true);
   };
-  
-    return (
-      <div>
-        <form
-          onSubmit={(e) => {
-            props.onSubmit(note);
-            e.preventDefault();
-            setNote({ title: '', text: '' });
-          }}
-          className="note-form"
-        >
-          {expanded ? <input onChange={handleChange} value={note.title} name="title" placeholder="Title" /> : null }
-          <textarea onFocus={handleFocus} onChange={handleChange} value={note.text} name="text" placeholder="Take a note..." rows={expanded ? 3 : 1} />
-          <Zoom in={expanded}>
-            <Fab>
-              <AddIcon />
-            </Fab>
-          </Zoom>
-        </form>
-      </div>
-    );
+
+  return (
+    <div>
+      <form
+        onSubmit={(e) => {
+          props.onSubmit(note);
+          e.preventDefault();
+          setNote({ title: '', text: '' });
+        }}
+        className="note-form"
+      >
+        {expanded ? (
+          <input
+            onChange={handleChange}
+            value={note.title}
+            name="title"
+            placeholder="Title"
+          />
+        ) : null}
+        <textarea
+          onFocus={handleFocus}
+          onChange={handleChange}
+          value={note.text}
+          name="text"
+          placeholder="Take a note..."
+          rows={expanded ? 3 : 1}
+        />
+        <Zoom in={expanded}>
+          <Fab>
+            <AddIcon />
+          </Fab>
+        </Zoom>
+      </form>
+    </div>
+  );
 };
 
 export default NoteFrom;
