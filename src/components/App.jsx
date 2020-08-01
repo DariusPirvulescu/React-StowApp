@@ -17,6 +17,10 @@ const App = () => {
     <div>
       <Header />
       <NoteForm onSubmit={handleSubmit} />
+      <Note
+        title="default"
+        content="defaut note for check stuff"
+      />
       <div className="notes-area">
         {notesArr.map((noteItem, index) => {
           const key = index + Math.floor(Math.random() * 70);
