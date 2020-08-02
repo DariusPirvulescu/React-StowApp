@@ -9,7 +9,7 @@ import NoteForm from "./NoteForm";
 const App = () => {
   const [notesArr, setNotesArr] = useState([{
     title: "default",
-    text: "defaut note for check stuff"
+    text: "defaut note to check stuff"
   }]);
 
   const handleSubmit = (inputNote) => {
