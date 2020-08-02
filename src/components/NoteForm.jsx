@@ -52,7 +52,7 @@ const NoteFrom = (props) => {
           rows={expanded ? 3 : 1}
         />
         <Zoom in={expanded}>
-          <Fab>
+          <Fab type="submit">
             <AddIcon />
           </Fab>
         </Zoom>
