@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Zoom from "@material-ui/core/Zoom";
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
@@ -58,6 +59,10 @@ const NoteFrom = (props) => {
       </form>
     </div>
   );
+};
+
+NoteFrom.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 };
 
 export default NoteFrom;
