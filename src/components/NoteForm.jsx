@@ -41,6 +41,7 @@ const NoteFrom = (props) => {
             value={note.title}
             name="title"
             placeholder="Title"
+            autoComplete="off"
           />
         ) : null}
         <textarea
