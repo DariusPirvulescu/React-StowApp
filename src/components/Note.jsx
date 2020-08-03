@@ -1,5 +1,6 @@
-import React from 'react';
-import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import React from "react";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+import PropTypes from "prop-types";
 
 const Note = (props) => {
   const handleDelete = () => {
@@ -15,10 +16,21 @@ const Note = (props) => {
         onClick={handleDelete}
         className="delete-btn"
       >
-        <HighlightOffIcon />
+        <HighlightOffIcon className="delete-icon" />
       </button>
     </div>
   );
+};
+
+Note.defaultProps = {
+  title: "",
+  content: ""
+};
+
+Note.propTypes = {
+  onComplete: PropTypes.func.isRequired,
+  title: PropTypes.string,
+  content: PropTypes.string
 };
 
 export default Note;

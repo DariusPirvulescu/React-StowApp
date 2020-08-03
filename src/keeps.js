@@ -3,7 +3,7 @@ const keeps = [
     key: 1,
     title: 'Fill text',
     content:
-        'Add Sagan Ipsum to all the placeholder notes',
+        'Add Sagan Ipsum to all the placeholder notes'
   },
   {
     key: 2,

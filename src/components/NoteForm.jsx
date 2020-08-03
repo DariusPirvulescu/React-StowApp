@@ -1,13 +1,13 @@
-/* eslint-disable arrow-body-style */
-import React, { useState } from 'react';
-import Zoom from '@material-ui/core/Zoom';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import Zoom from "@material-ui/core/Zoom";
+import Fab from "@material-ui/core/Fab";
+import AddIcon from "@material-ui/icons/Add";
 
 const NoteFrom = (props) => {
   const [note, setNote] = useState({
-    title: '',
-    text: ''
+    title: "",
+    text: ""
   });
   const [expanded, setExpanded] = useState(false);
 
@@ -31,7 +31,7 @@ const NoteFrom = (props) => {
         onSubmit={(e) => {
           props.onSubmit(note);
           e.preventDefault();
-          setNote({ title: '', text: '' });
+          setNote({ title: "", text: "" });
         }}
         className="note-form"
       >
@@ -41,6 +41,7 @@ const NoteFrom = (props) => {
             value={note.title}
             name="title"
             placeholder="Title"
+            autoComplete="off"
           />
         ) : null}
         <textarea
@@ -59,6 +60,10 @@ const NoteFrom = (props) => {
       </form>
     </div>
   );
+};
+
+NoteFrom.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 };
 
 export default NoteFrom;

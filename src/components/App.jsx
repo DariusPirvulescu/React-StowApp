@@ -1,5 +1,3 @@
-/* eslint-disable quotes */
-/* eslint-disable arrow-body-style */
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
