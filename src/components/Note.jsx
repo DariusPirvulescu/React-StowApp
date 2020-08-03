@@ -1,6 +1,6 @@
-import React from 'react';
-import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import PropTypes from 'prop-types';
+import React from "react";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+import PropTypes from "prop-types";
 
 const Note = (props) => {
   const handleDelete = () => {
