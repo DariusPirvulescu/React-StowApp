@@ -17,5 +17,5 @@ npm install
 ```
 npm start
 ```
-Will start the local server at port 3000
+Will start the local server at port 3000 \
 [http://localhost:3000/](http://localhost:3000/)
