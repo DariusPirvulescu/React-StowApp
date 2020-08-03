@@ -103,8 +103,6 @@ footer p {
 .delete-btn {
   background-color: white;
   border: none;
-  border-left: 2px solid #F5BA1D;
-  border-top: 2px solid #F5BA1D;
   padding: 4px;
   outline: none;
   position: absolute;
@@ -112,6 +110,7 @@ footer p {
   bottom: 0px;
 }
 
-.delete-btn:hover{
+.delete-icon:hover{
+  border-radius: 50%;
   background-color: #F5BA1D;
 }

@@ -16,7 +16,7 @@ const Note = (props) => {
         onClick={handleDelete}
         className="delete-btn"
       >
-        <HighlightOffIcon />
+        <HighlightOffIcon className="delete-icon" />
       </button>
     </div>
   );
