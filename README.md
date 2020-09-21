@@ -1,7 +1,7 @@
 # React-StowApp
 
 **Google Keep** mockup.
-Built making use of:
+Built with:
  - React Hooks 
  - conditional rendering 
  - ES6's spread operator 
