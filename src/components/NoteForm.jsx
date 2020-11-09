@@ -21,6 +21,12 @@ const NoteFrom = (props) => {
     });
   };
 
+  const submitNote = (e) => {
+    props.onSubmit(note);
+    e.preventDefault();
+    setNote({ title: "", text: "" });
+  }
+
   const handleFocus = () => {
     setExpanded(true);
   };
@@ -28,11 +34,7 @@ const NoteFrom = (props) => {
   return (
     <div>
       <form
-        onSubmit={(e) => {
-          props.onSubmit(note);
-          e.preventDefault();
-          setNote({ title: "", text: "" });
-        }}
+        onSubmit={submitNote}
         className="note-form"
       >
         {expanded ? (
