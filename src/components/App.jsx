@@ -28,14 +28,13 @@ const App = () => {
       <NoteForm onSubmit={handleSubmit} />
       <div className="notes-area">
         {notesArr.map((noteItem, index) => {
-          const key = index + Math.floor(Math.random() * 70);
           return (
             <Note
-              key={key}
+              key={index + Math.random()}
               id={index}
               title={noteItem.title}
               content={noteItem.text}
-              onComplete={deleteNote}
+              onDelete={deleteNote}
             />
           );
         })}

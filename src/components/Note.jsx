@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Note = (props) => {
   const handleDelete = () => {
-    props.onComplete(props.id);
+    props.onDelete(props.id);
   };
 
   return (
@@ -28,7 +28,7 @@ Note.defaultProps = {
 };
 
 Note.propTypes = {
-  onComplete: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
   title: PropTypes.string,
   content: PropTypes.string
 };
